@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.textContent = 'View Details';
         button.addEventListener('click', () => {
             // Generates a URL based on event name and points to the sports folder
-            const formattedEventName = event.toLowerCase().replace(/ /g, '');
+            const formattedEventName = event.toLowerCase().replace( /g, '');
             window.location.href = `${formattedEventName}.html`; 
         });
 
