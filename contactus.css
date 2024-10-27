@@ -1,0 +1,118 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Body background */
+body {
+  background-color: #f4f4f4;
+  background-image: url('img/Olympic-Rings-5-Continents-All-Colours-in-Flags.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+}
+
+/* Container for the form and content */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+/* Header styles */
+header {
+  background-color: navy;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+  margin-bottom: 10px;
+  font-size: 3vw;
+}
+
+/* Navigation menu styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fedb00;
+}
+
+/* Form styles */
+h1 {
+  text-align: center;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 20px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 10px; /* Adds space above the button */
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+/* Footer styles */
+footer {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Ensures the footer sticks to the bottom of the page */
+  width: 100%;
+}

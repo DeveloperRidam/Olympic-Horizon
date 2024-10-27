@@ -1,0 +1,243 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: navy;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold';
+    margin-bottom: 10px;
+    font-size: 3vw;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+
+nav ul li a:hover {
+    color: #fedb00;
+}
+
+main {
+    padding: 1em;
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.event-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+}
+
+.event-card h2 {
+    font-size: 1.2em;
+    margin: 0 0 0.5em 0;
+}
+
+.event-card p {
+    margin: 0.5em 0;
+}
+
+.event-card .winner {
+    color: #007bff;
+    font-weight: bold;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.612);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+button:active {
+    background-color: #004080;
+    transform: scale(0.98);
+}
+
+#heading1 {
+    text-align: center;
+    font-family: 'Anton';
+    font-size: 50px;
+}
+
+/* Footer styles */
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* use viewport height */
+    margin: 0;
+}
+
+main {
+    flex: 1; /* this allows the main content to expand */
+}
+
+/* Footer styles */
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Ensures vertical alignment is centered */
+    gap: 1em;
+    padding: 1em; /* Added padding for better spacing */
+    min-height: 100vh; /* Ensure container takes at least the height of the viewport */
+}
+
+.event-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This distributes space evenly inside the card */
+}
+button {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Pushes the button to the bottom of the flex container */
+    width: calc(100% - 20px); /* Optional: ensures button width is consistent and factors in padding */
+}
+
+/* Adding a general rule for the last element in a flex container to stick to the bottom */
+.event-card > :last-child {
+    margin-top: auto;
+}
+button {
+    width: calc(100% - 2em); /* Adjust width considering padding */
+    align-items: center;
+}
+.event-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 200px; /* Fixed width */
+    height: 130px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Keeps the footer at bottom */
+}
+.event-card {
+    background-color: #f0f0f0; /* Light background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Internal padding */
+    margin: 20px; /* Space between cards */
+    text-align: center; /* Center text inside the card */
+    width: 200px; /* Set a fixed width for the cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures vertical spacing */
+}
+
+button {
+    align-self: center; /* Center align button horizontally in the flex container */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    width: auto; /* Auto width based on content inside */
+}
+@media (max-width: 600px) {
+    .event-card {
+        width: 100%; /* Full width on smaller screens */
+        padding: 10px;
+        margin: 10px 0; /* Reduce margin for smaller screens */
+    }
+
+    button {
+        width: 80%; /* Make button wider on smaller screens for better tap targets */
+    }
+}

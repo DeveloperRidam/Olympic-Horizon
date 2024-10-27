@@ -1,0 +1,84 @@
+/* Results Section Styling */
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#heading {
+    text-align: center;
+}
+
+.results-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+    width: 100%;
+}
+
+/* Styling for result buttons */
+.result-button {
+    width: 45%;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+#men,
+#women {
+    padding: 0;
+    margin: 0;
+}
+
+/* Specific Colors for Men and Women Buttons */
+.men-button {
+    background-color: #007bff; /* Blue color for Men's Results */
+    border: 2px solid #0056b3; /* Darker blue border */
+}
+
+.women-button {
+    background-color: #ff4081; /* Pink color for Women's Results */
+    border: 2px solid #c2185b; /* Darker pink border */
+}
+
+/* Hover effect for buttons */
+.result-button:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Darkens the shadow on hover */
+}
+
+/* Styling for the heading inside buttons */
+.result-button h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 28px;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .results-container {
+        flex-direction: column;
+        margin: 20px 0; 
+        width: 100%;
+    }
+
+    .result-button {
+        width: 90%; 
+        margin-bottom: 20px; 
+    }
+}
+
+body{
+
+background-image: url(img/Olympic-Rings-5-Continents-All-Colours-in-Flags.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+#highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; /* Center items on larger screens */
+}
+
+.highlight {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    flex: 1 1 calc(50% - 1rem); /* Adjust to 50% width on medium screens */
+    box-sizing: border-box;
+    max-width: 400px; /* Limit the width of the cards */
+}
+
+.highlight img {
+    width: 100%;
+    height: auto;
+}
+
+.highlight h2 {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1.2rem; /* Increase font size for better readability */
+}
+
+.highlight p {
+    padding: 0 0.5rem 0.5rem;
+}
+
+.highlight a {
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.highlight a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .highlight {
+        flex: 1 1 calc(100% - 1rem); /* Full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem; /* Adjust header font size */
+    }
+    
+    .highlight h2 {
+        font-size: 1rem; /* Adjust title font size */
+    }
+    
+    .highlight p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+}
+
+body{
+
+    background-image: url(img/Olympic-Rings-5-Continents-All-Colours-in-Flags.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
